@@ -1,0 +1,186 @@
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+  line-height:1.6;
+  background:
+radial-gradient(circle at top left, rgba(59,130,246,0.15), transparent 25%),
+#0f172a;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:rgba(17,24,39,0.8);
+  backdrop-filter:blur(10px);
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.hero{
+  min-height:70vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:3rem;
+}
+
+.hero p{
+  margin:20px 0;
+  font-size:1.2rem;
+}
+
+button{
+  padding:12px 24px;
+  border:none;
+  background:#3b82f6;
+  color:white;
+  cursor:pointer;
+  border-radius:8px;
+  transition:0.3s ease;
+}
+
+button:hover{
+  transform:translateY(-3px);
+  background:#2563eb;
+}
+
+section{
+  padding:80px 10%;
+}
+
+.project-card{
+  background:#1e293b;
+  padding:20px;
+  margin-top:20px;
+  border-radius:10px;
+  transition:0.3s ease;
+}
+
+.project-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#3b82f6;
+}
+
+.skills-container{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.skills-container span{
+  background:#1e293b;
+  padding:10px 18px;
+  border-radius:20px;
+}
+
+.hero h2{
+  font-size:4rem;
+  margin-bottom:10px;
+}
+
+.hero p{
+  color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav ul{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .hero h2{
+    font-size:2.5rem;
+  }
+
+  section{
+    padding:60px 5%;
+  }
+}
+
+.project-links{
+  margin-top:15px;
+  display:flex;
+  gap:15px;
+}
+
+.project-links a{
+  text-decoration:none;
+  color:#60a5fa;
+  font-weight:bold;
+}
+
+.hero,
+#about,
+#skills,
+#projects,
+#contact{
+  animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#94a3b8;
+}
